@@ -300,7 +300,7 @@ a {
     height: 350px;
     display: flex;
     background-color: darksalmon;
-    background-image: url('/purrfect/images/opacity_pawprint.png');
+    background-image: url('../purrfect/images/opacity_pawprint.png');
     background-size: cover;
     background-position: center;
 
