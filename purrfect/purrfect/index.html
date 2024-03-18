@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <!-- Fiona Mohlová -->
+    <!-- fionamohl@gmail.com -->
+    <!-- fiona_02941 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+
+
+    <title>Purrfect</title>
+</head>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <img id="logo" src="../purrfect/images/purrfect_logo.png" alt="Logo">
+    </div>
+
+    <nav>
+         <ul>
+             <li><a href="#"> Home </a></li>
+             <li><a href="#"> About us </a></li>
+             <li><a href="#"> Contact </a></li>
+             <li><div class="form-check form-switch" id="darkModeSwitch" >
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Dark mode</label>
+              </div></li>
+         </ul>
+
+         <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- SECTION 1 -->
+<body>
+    <section>
+        <div class="product_wrapper">
+            <div class="main_container">
+                <h1 class="main_title"> A feast for felines </h1>
+                <p class="description"> Where feline health meets natural goodness! At Purrfect, we believe that our feline friends deserve the very best nutrition, which is why we craft our organic cat food with care and dedication. </p>
+            </div>
+            <div class="image_container2">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        
+            <h2 class="flavour_title"> Try our flavours!</h2>
+            <div class="flavours_wrapper">
+                <div class="flavour">
+                    <img src="../purrfect/stickers/sticker-1.png" alt="Beef flavour">
+                    <h3 class="flavour_text">Beef Bliss</h3>
+                    <p class="flavour_text">Indulge your cat's taste buds with the savory delight of Beef Bliss, crafted to perfection for ultimate feline satisfaction.</p>
+                </div>
+                <div class="flavour">
+                    <img src="../purrfect/stickers/sticker-2.png" alt="Tuna flavour">
+                    <h3 class="flavour_text">Tuna Temptation</h3>
+                    <p class="flavour_text">Satisfy your cat's cravings with the irresistible taste of Tuna Temptation from Purrfect, the purrfect choice for discerning felines.</p>
+                </div>
+                <div class="flavour">
+                    <img src="../purrfect/stickers/sticker-3.png" alt="Shrimp flavour">
+                    <h3 class="flavour_text">Shrimp Surf</h3>
+                    <p class="flavour_text">Transport your feline friend to seafood paradise with our new Shrimp flavour, a delightful flavor sure to make every mealtime a sensation.</p>
+                </div>
+            </div>
+        
+    </section>
+
+
+<!-- SECTION 2 -->
+
+<div class="form_wrapper">
+
+    <div class="image_container">
+        
+    </div>
+        
+    <div class="form_container">
+        <h1 class="main_title"> Club membership </h1>
+        <p class="description">Join our community of passionate cat lovers! Sign up now to receive exclusive offers, helpful tips, and the latest updates on our organic cat food products.</p>
+        <div class="formular">
+            <h4>Join our community today</h4>
+            <form id="registrationForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div id="message"></div>
+            </form>
+        </div>
+    </div> 
+
+</div>
+
+
+<button id="back-to-top-btn" title="Go to top">&#9650;</button>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer">
+        <div class="footer_container">
+            <h3>Contact Us</h3>
+            <ul>
+                <li> +420 777 666 555</li>
+                <li> purrfect@email.com</li>
+                <li> Zlatá ulička 1, Praha</li>
+            </ul>
+            <ul>
+                <li><a href="#"> Shipping </a></li>
+                <li><a href="#"> GDPR </a></li>
+                <li><a href="#"> Copyright </a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://kit.fontawesome.com/3a201b7e42.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="darkmode.js"></script>
+<script src="arrow.js"></script>
+<script src="formular.js"></script>
+<script src="responsive-menu.js"></script>
+
+</body>
+</html>

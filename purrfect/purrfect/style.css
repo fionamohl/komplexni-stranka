@@ -1,0 +1,343 @@
+/* General */
+
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark Mode */
+
+
+
+body {
+    transition: background-color 0.2s;
+    background-color: #F5EBD1;
+    color: #473037;
+}
+
+.dark-mode {
+    background-color:#473037 ;
+    color: #F5EBD1;
+}
+
+/* Typography */
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+/* Header */
+
+.header {
+    transition: background-color 0.2s;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    width: 100vw;
+    background-color: #F5EBD1;
+    box-shadow: 0 0 10px rgba(193, 158, 164, 0.5);
+}
+
+.dark-mode .header {
+    background-color: #473037;
+    box-shadow: 0 0 10px rgba(38, 28, 28, 0.5);
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logo img {
+    width: 125px;
+    margin-left: 20px;
+}
+
+nav {
+    padding-right: 30px;
+    
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav li {
+        margin-right: 10px;
+        margin-left: 10px; 
+        margin-top: 10px; 
+    }
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+/* Bootstrap switch */
+#darkModeSwitch .form-check-input {
+    background-color: #F5EBD1;
+  }
+  
+  #darkModeSwitch .form-check-input:checked {
+    background-color: #473037;
+  }
+  
+  #darkModeSwitch .form-check-input:focus {
+    box-shadow: none;
+  }
+
+/* Section 1 - Main title section*/
+
+.product_wrapper {
+    height: 650px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 2%;
+    background-image: url('../purrfect/images/opacity_pawprint.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.dark-mode .product_wrapper {
+    background-image: url('../purrfect/images/opacity_pawprint.png');
+    
+}
+.main_container {
+    align-self: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.main_title {
+    margin-left: 10%;
+    margin-top: 50px;
+    color: darksalmon;
+}
+
+.description {
+    margin-left: 10%;
+    margin-top: 5px;
+    max-width: 70%;
+}
+
+
+.product_wrapper img {
+    justify-content: center;
+    max-width: 100%;
+    max-height: 600px;
+}
+
+.image_container2 {
+        width: 50%;
+        height: 650px; 
+        background-image: url('../purrfect/images/kibble.png');
+        background-size: cover; 
+        background-position: center; 
+}
+
+/* Section 1 - Flavours selection */
+
+.flavour_title {
+    text-align: center;
+    font-variant: "h1";
+    margin-top: 80px;
+
+}
+
+.flavours_wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.flavour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin:15px;
+}
+
+.flavour img{
+    max-width: 50%;
+    min-width: 150px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.flavour:hover img {
+    transform: scale(1.2);
+  }
+
+.flavour_text {
+    text-align: center;
+
+}
+
+/* Section 2 - Form */
+
+.image_container {
+    width: 50%;
+        height: 750px; 
+        background-image: url('../purrfect/images/eating2.png'); 
+        background-size: cover;
+        background-position: center; 
+}
+
+
+.form_wrapper {
+    height: 750px;
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+    background-color: #F0DFCB;
+    justify-content: center;
+
+}
+
+.dark-mode .form_wrapper {
+    background-color: #473037;
+}
+
+.form_container img {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.form_container {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.formular {
+    width: 70%;
+    max-width: 500px;
+    margin-left: 10%;
+    margin-bottom: 40px;
+  }
+  
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+  }
+  
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: darksalmon;
+    border: none;
+    border-radius: 30px;
+  }
+
+.btn:hover {
+    background-color: salmon;
+  }
+
+  #message {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    margin-top: 15px;
+    border-radius: 30px;
+    text-align: center;
+  }
+  
+  .error {
+    background-color: #ffcccc; 
+    color: #ff0000;
+  }
+  
+  .success {
+    background-color: #ccffcc; 
+    color: #009900; 
+  }
+
+
+/* Footer */
+.footer {
+    height: 350px;
+    display: flex;
+    background-color: darksalmon;
+    background-image: url('/purrfect/images/opacity_pawprint.png');
+    background-size: cover;
+    background-position: center;
+
+}
+.footer_container {
+    width: 50%;
+    align-self: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.footer_container li {
+    list-style-type: none;
+}
+.footer_container img {
+    width: 100px;
+}
+
+/* Arrow (Back to the top button) */
+
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: #E8BAB0;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  #back-to-top-btn:hover {
+    opacity: 0.7;
+  }
+
+

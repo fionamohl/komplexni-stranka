@@ -1,0 +1,102 @@
+/* Responsive menu */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        transition: background-color 0.2s;
+        background-color: #F5EBD1;
+        padding: 10px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+
+    .dark-mode nav ul {
+        background-color: #473037;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon i:first-child {
+        display: block;
+    }
+
+    .menu-icon i:last-child {
+        display: none;
+    }
+
+    nav ul.show + .menu-icon i:first-child {
+        display: none;
+    }
+
+    nav ul.show + .menu-icon i:last-child {
+        display: block;
+    }
+}
+
+/* Section 1 - Main title section*/
+@media (max-width: 768px) {
+    .product_wrapper {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .main_container {
+        width: 100%;
+    }
+    .main_title {
+        margin-top: 10%;
+        margin: 5%;
+    }
+
+    .description {
+        margin: 5%;
+    }
+
+    .image_container2 {
+            width: 100%;
+            height: 300px;
+            background-image: url('../purrfect/images/kibble.png');
+            background-size: cover; 
+            background-position: center;
+}}
+
+/* Section 1 - Flavours selection */
+@media (max-width: 768px) {
+    .flavours_wrapper {
+        flex-direction: column;
+    }
+}
+
+/* Section 2 - Form */
+@media (max-width: 768px) {
+    .form_wrapper {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .form_container {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .image_container {
+        width: 100%;
+            height: 300px;
+            background-image: url('../purrfect/images/eating2.png');
+            background-size: cover; 
+            background-position: center;
+            
+}}
